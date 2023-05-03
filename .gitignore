@@ -1,0 +1,34 @@
+# IDEs
+.vscode/
+!.vscode/launch.json
+.history/
+.idea/
+
+# Node & npm & yarn
+**/.npmrc
+**/node_modules/
+**/.yarnrc
+
+
+# Logs
+logs
+*.log
+
+# Build & env
+dist
+.env
+.hybrid-env
+test-results/
+.husky/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+.dccache

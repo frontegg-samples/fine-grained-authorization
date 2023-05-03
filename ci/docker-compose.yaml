@@ -1,0 +1,16 @@
+version: "3"
+services:
+  opa:
+    image: openpolicyagent/opa:0.51.0
+    restart: always
+    ports:
+      - "8182:8181"
+    volumes:
+      - ./opa-configuration.yaml:/etc/opa-configuration.yaml
+    command:
+      - "run"
+      - "--server"
+      - "--log-level"
+      - "debug"
+      - "-c"
+      - "/etc/opa-configuration.yaml"

@@ -1,0 +1,21 @@
+services:
+  - name: frontegg-bundle-endpoint
+    url: https://api.frontegg.com/policy
+    credentials:
+      oauth2:
+        token_url: "https://frontegg-prod.frontegg.com/oauth/token"
+        client_id: "<client id>"
+        client_secret: "<api key>"
+
+decision_logs:
+  console: true
+
+bundles:
+  frontegg:
+    service: frontegg-bundle-endpoint
+    resource: resources/bundles/v1
+    persist: false
+    polling:
+      min_delay_seconds: 60
+      max_delay_seconds: 60
+
