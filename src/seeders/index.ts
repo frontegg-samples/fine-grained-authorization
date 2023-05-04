@@ -1,3 +1,3 @@
-import {seed} from "./seed-data";
+import { seed } from './seed-data';
 
 seed().catch(console.error);

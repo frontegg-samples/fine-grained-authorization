@@ -1,5 +1,5 @@
 export interface HeroContext {
-	tenantId: string,
-	heroId: string,
-	assetId: string
+	tenantId: string;
+	heroId: string;
+	assetId: string;
 }
